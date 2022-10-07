@@ -5,6 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg, #557c83, #3aada8, #a2d5ac, #e5eec1);
+  background-size: 400% 400%;
+  transition: background .5s linear;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
